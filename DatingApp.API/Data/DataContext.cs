@@ -9,5 +9,7 @@ namespace DatingApp.API.Data
 
         // tell dbcontext about our entities
         public DbSet<Value> Values { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }
