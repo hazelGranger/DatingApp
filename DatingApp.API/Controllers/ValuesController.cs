@@ -29,6 +29,7 @@ namespace DatingApp.API.Controllers
         }
 
         // GET api/values/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -44,7 +45,6 @@ namespace DatingApp.API.Controllers
         }
 
         // PUT api/values/5
-        [AllowAnonymous]
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
